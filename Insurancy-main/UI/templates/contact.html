@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Insurancy</title>
+	<meta name="description"
+		content="Insurancy is sharp Insurance agency website template based on HTML CSS and JavaScript specially designed for insurance company, insurance agency and startup agency.">
+	<meta name="keywords"
+		content="insurance broker website template, website template for insurance company, insurance website templates free download, insurance company website template, life insurance website template, insurance agency website template, auto insurance website template, insurance agency, html5 website template, insurance website examples, car insurance website template, insurance responsive website template free download">
+	<meta name="author" content="atulcodex - Atul Prajapati | Web Developer">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="atulcodex - Atul Prajapati | Freelance web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="../static/image/png" href="../static/img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/contact.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="../static/styles/index.css">
+	<!-- Jquery CDN link -->
+	<style>
+		.human-message {
+			max-width: 75%;
+			float: right;
+			padding: 1rem 1.25rem;
+			background-color: #0057ff;
+			color: #fff;
+			border-radius: 0.5rem;
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 1.25rem;
+		}
+
+		.reply-message {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		.bot-message {
+			width: fit-content;
+			max-width: 75%;
+			padding: 1rem 1.25rem;
+			background-color: #f2f2f2;
+			color: rgb(115, 115, 115);
+			border-radius: 0.5rem;
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 1.25rem;
+		}
+
+		.bot-icon {
+			width: 2.5rem;
+			height: 2.5rem;
+			background-color: gray;
+			border-radius: 10px;
+			flex-shrink: 0;
+			margin-top: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.input-message {
+			width: 80%;
+			max-height: 72px;
+			overflow: auto;
+			overflow-wrap: break-word;
+			resize: none;
+			height: 50px;
+			outline: 2px solid transparent;
+			outline-offset: 2px;
+			border-style: none;
+			background-color: #f2f2f2;
+			border-radius: 100px;
+			padding-left: 1rem;
+			padding-top: 10px;
+			color: rgb(115, 115, 115);
+		}
+	</style>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+		<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="../static/img/insurancy logo.png" alt="insurancy-logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li class="active"><a href="/">HOME</a></li>
+				<li><a href="/about">ABOUT</a></li>
+
+
+				<li><a href="/contact">CHATBOT</a></li>
+				<li><a href="/Admin">ADMIN</a></li>
+				<li>
+					<a href="#" class="btn btn-blue">SIGN UP</a>
+					<ul class="dropdown-list">
+						<li><a href="/login"> LOGIN </a></li>
+						<li><a href="/register">REGISTER </a></li>
+
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<section class="breadcrumbs">
+		<div class="breadcrumb-container">
+			<h2 class="hero-heading white">
+				HEALTH INSURANCE CHATBOT
+			</h2>
+		</div>
+	</section>
+
+	<section class="map">
+		<div class="container">
+			<h4 class="sub-heading">Section Overline</h4>
+			<h2 class="heading">
+				HEALTH INSURANCE CHATBOT
+			</h2>
+
+			<main>
+				<div class="w-full h-full">
+					<div class="pb-1">
+						<div class="flex flex-col  px-6 pb-10 pt-4" id="chat-log">
+
+
+
+						</div>
+					</div>
+				</div>
+			</main>
+
+
+			<div class="msger-inputarea">
+
+				<input type="text" class="input-message" id="user-input" placeholder="Enter your message...">
+
+				<button class="button3 submit-buttom" onclick="sendMessage()">SEND MESSAGE</button>
+			</div>
+
+
+
+
+
+
+		</div>
+	</section>
+
+	<section class="contact-info">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<ion-icon name="call-outline"></ion-icon>
+					<h4 class="info-name white">Support Hotline</h4>
+					<h6 class="info-detail white">1800 - 6383 - 35246</h6>
+				</div>
+				<div class="col">
+					<ion-icon name="chatbubbles-outline"></ion-icon>
+					<h4 class="info-name white">Online Support</h4>
+					<h6 class="info-detail white">Chat with an Insurance Agent</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ------------------------------- Contact Info --------------------------- -->
+
+	<script>
+		// Array to store chat history
+		const chatHistory = [];
+
+		// Function to send a user message and receive a bot response
+		function sendMessage() {
+
+			const userInput = document.getElementById('user-input');
+			console.log(userInput.value); // Log the current value before clearing
+
+			const userMessage = userInput.value;
+
+
+
+			const chatLog = document.getElementById('chat-log');
+			const messageDiv = document.createElement('div');
+			messageDiv.textContent = userMessage;
+			messageDiv.classList.add('human-message');
+			chatLog.appendChild(messageDiv);
+
+			var data = { userMessage: userInput.value };
+
+			console.log(data);
+			$.ajax({
+				type: 'POST',
+				url: '/getRequest1',  // Replace with your actual Flask route
+				contentType: 'application/json;charset=UTF-8',
+				data: JSON.stringify(data),
+				success: function (response) {
+
+
+
+					const chatLog = document.getElementById('chat-log');
+					const messageDiv = document.createElement('div');
+					messageDiv.textContent = response;
+					messageDiv.classList.add('bot-message');
+					chatLog.appendChild(messageDiv);
+
+
+					// Optionally, scroll to the bottom of the chat log
+					chatLog.scrollTop = chatLog.scrollHeight;
+					userInput.value = '';
+
+				},
+				error: function (e) {
+					console.log('ERROR:', e);
+				}
+			});
+			return false;
+		}
+	</script>
+
+
+
+	<footer>
+		<div class="footer-container">
+
+			<p class="para-line white">© 2024 health insurance cost prediction. All rights reserved | Designed by
+				Students</p>
+		</div>
+	</footer>
+	<!-- ----------------------- Footer ------------------- -->
+
+
+	<!-------------- Importing JS file -------------->
+	<script src="../static/js/script.js"></script>
+
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 40) {
+					$('#topBtn').fadeIn();
+				}
+				else {
+					$('#topBtn').fadeOut();
+				}
+			});
+
+			$("#topBtn").click(function () {
+				$('html, body').animate({ scrollTop: 0 }, 800);
+			});
+		});
+	</script>
+</body>
+
+</html>

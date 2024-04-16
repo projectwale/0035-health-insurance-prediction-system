@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News | Insurancy</title>
+	<meta name="description"
+		content="Insurancy is sharp Insurance agency website template based on HTML CSS and JavaScript specially designed for insurance company, insurance agency and startup agency.">
+	<meta name="keywords"
+		content="insurance broker website template, website template for insurance company, insurance website templates free download, insurance company website template, life insurance website template, insurance agency website template, auto insurance website template, insurance agency, html5 website template, insurance website examples, car insurance website template, insurance responsive website template free download">
+	<meta name="author" content="atulcodex - Atul Prajapati | Web Developer">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="atulcodex - Atul Prajapati | Freelance web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="../static/image/png" href="../static/img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/news-view.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="../static/js/jquery-3.3.1.js"></script>
+    
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<style>
+			/* Adjust the height of the select element */
+			#insurancecost {
+				height: 40px; /* Change the value as needed */
+			}#insurancetype {
+				height: 40px; /* Change the value as needed */
+			}
+		</style>
+</head>
+
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+		<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="/dashadmin">
+					<img src="../static/img/insurancy logo.png" alt="insurancy-logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			
+			<ul class="nav-list">
+				<li class="active"><a href="/dashadmin">HOME</a></li>
+				
+			
+				<li><a href="/addinsurance">ADD HEALTH INSURANCE</a></li>
+				<li>
+					<button class="btn btn-blue">
+						<a href="/logout">logout</a>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+	<section class="news-view">
+		<div class="container">
+			<h2 class="heading">ADD HEALTH INSURANCE</h2>
+			<div class="lead-form">
+				<form id="fileUploadForm" enctype="multipart/form-data">
+					<div class="field-row">
+						<div class="input-field">
+							<label for="text">AGENCY NAME</label>
+							<input type="text" id="NAME" name="NAME" placeholder=" Enter Your AGENCY NAME" required>
+						</div>
+
+
+						<div class="input-field">
+							<label for="insurance-type">Cost In Betn</label>
+							<select id="insurancecost" name="insurancecost" required>
+								<option value="" disabled selected>Select user range type</option>
+								<option value="2000">0 To 2000</option>
+								<option value="4000">2000 To 4000</option>
+								<option value="6000">4000 To 6000</option>
+								<option value="8000">6000 To 8000</option>
+								<option value="10000">8000 To 10000</option>
+								<option value="12000">10000 To 12000</option>
+								<option value="14000">12000 To 14000</option>
+								<option value="16000">14000 To 16000</option>
+								
+							</select>
+						</div>
+
+						<div class="input-field">
+							<label for="insurance-type">Insurance Type</label>
+							<select id="insurancetype" name="insurancetype" required>
+								<option value="" disabled selected>Select your insurance type</option>
+								<option value="Health Insurance">Health Insurance</option>
+								<option value="Life Insurance">Life Insurance</option>
+								<option value="Auto Insurance">Auto Insurance</option>
+								<option value="Home Insurance">Home Insurance</option>
+
+								<option value="Homeowners/Renters Insurance">Homeowners/Renters Insurance</option>
+								<option value="Travel Insurance">Travel Insurance</option>
+								<option value="Disability Insurance">Disability Insurance</option>
+								<option value="Long-Term Care Insurance">Long-Term Care Insurance</option>
+
+
+								<option value="Business Insurance">Business Insurance</option>
+								<option value="Liability Insurance">Liability Insurance</option>
+								<option value="Disability Insurance">Disability Insurance</option>
+								<option value="Pet Insurance">Pet Insurance</option>
+								
+							</select>
+						</div>
+						
+						<div class="input-field">
+							<label for="text">Upload Image</label>
+							<input type="file" id="file" name="file"  required>
+						</div>
+
+						<div class="input-field">
+							<label for="number">Phone No.</label>
+							<input type="text" id="Phone" name="Phone" placeholder=" Enter Your phone number" required>
+						</div>
+
+					
+						<div class="input-field">
+							<label for="text">Address</label>
+							<input type="text" id="Address" name="Address" placeholder="Enter Your  Address" required>
+						</div>
+						<div class="input-field">
+							<label for="text">Description</label>
+							<textarea class="input-message" id="usermassge"  name="usermassge"  placeholder="Enter your message..."></textarea>
+						</div>
+						
+
+						
+					</div>
+
+					<br>
+					<br>
+
+					<button  type="submit"  id="btnSubmit"  class="btn btn-blue">Submit</button>
+				</form>
+			</div>
+
+		
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function () {
+			$("#btnSubmit").click(function (event) {
+				event.preventDefault();
+		
+				// Perform validation checks
+				var NAME = $("#NAME").val();
+				var Phone = $("#Phone").val();
+				var Address = $("#Address").val();
+				var usermassge = $("#usermassge").val();
+				
+		
+				if (NAME.trim() === "") {
+					alert("Please enter your Agency  Name");
+					return;
+				}
+	
+		
+				// Phone number validation
+				if (!/^\d{10}$/.test(Phone)) {
+					alert("Please enter a valid 10-digit phone number");
+					return;
+				}
+		
+				if (Address.trim() === "") {
+					alert("Please enter your Address");
+					return;
+				}
+		
+				if (usermassge.trim() === "") {
+					alert("Please Enter Description Regarding insurance");
+					return;
+				}
+		
+				// If all validations pass, proceed with form submission
+				var form = $('#fileUploadForm')[0];
+				var data = new FormData(form);
+				console.log(data);
+				$.ajax({
+					type: 'POST',
+					enctype: 'multipart/form-data',
+					url: "addin",
+					data: data,
+					processData: false,
+					contentType: false,
+					cache: false,
+					timeout: 600000,
+					success: function (response) {
+						Swal.fire({
+							title: 'Success!',
+							text: response.message,
+							icon: 'success',
+							confirmButtonText: 'Okay'
+						}).then((result) => {
+							// Check if the "Okay" button was clicked
+							if (result.isConfirmed) {
+								// Redirect to a new URL
+								window.location.href = '/dashadmin'; // Replace with the desired URL
+							}
+						});
+					},
+					error: function (e) {
+						console.log("ERROR : ", e);
+						$("#btnSubmit").prop("disabled", false);
+					}
+				});
+			});
+		});
+	</script>
+
+
+	
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">© 2024 health insurance cost prediction. All rights reserved | Designed by Students</p>
+		</div>
+	</footer>
+	
+	<script src="../static/js/script.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 40) {
+					$('#topBtn').fadeIn();
+				}
+				else {
+					$('#topBtn').fadeOut();
+				}
+			});
+
+			$("#topBtn").click(function () {
+				$('html, body').animate({ scrollTop: 0 }, 800);
+			});
+		});
+	</script>
+
+	
+  
+</body>
+
+</html>

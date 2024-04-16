@@ -1,0 +1,84 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://roofandfloor.thehindu.com/raf/real-estate-blog/wp-content/uploads/sites/14/2019/04/Panvel-840x480.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_morning:
+  - text: "Good morning. I hope you had a good night's sleep. How are you feeling today?"
+  utter_afternoon:
+  - text: "Good afternoon. How is your day going?"
+
+  utter_evening:
+  - text: "Good evening. How has your day been?"
+
+  utter_night:
+  - text: "Good night. Get some proper sleep"
+
+  utter_thanks:
+  - text: "You're most welcome!"
+
+  utter_neutralresponse:
+  - text: "Oh I see. Do you want to talk about something?"      
+
+  utter_about:
+  - text: "I'm Rasa chatbot, your Personal Therapeutic AI Assistant. How are you feeling today"
+
+  utter_skill:
+  - text: "I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."
+
+  utter_creation:
+  - text: "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques"
+
+  utter_name:
+  - text: "Oh nice to meet you. Tell me how was your week?"
+
+  utter_help:
+  - text: "Tell me your problem so that i can assist you"
+
+  utter_sad:
+  - text: "I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?"
+  utter_stressed:
+  - text: "What do you think is causing this?"
+  utter_worthless:
+  - text: "It's only natural to feel this way. Tell me more. What else is on your mind?"
+  utter_depressed:
+  - text: "It helps to talk about what's happening. You're going to be okay"
+
+  utter_happytwo:
+  - text: "That's geat to hear. I'm glad you're feeling this way."
+ 
+  utter_my_name_is:
+  - text: "I am Rasa Chatbot"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,120 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: my_name_is path
+  steps:
+  - intent: my_name_is
+  - action: utter_my_name_is
+
+- story: morning path
+  steps:
+  - intent: morning
+  - action: utter_morning
+
+- story: afternoon path
+  steps:
+  - intent: afternoon
+  - action: utter_afternoon
+
+- story: evening path
+  steps:
+  - intent: evening
+  - action: utter_evening
+
+- story: night path
+  steps:
+  - intent: night
+  - action: utter_night
+
+- story: thanks path
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: neutralresponse path
+  steps:
+  - intent: neutralresponse
+  - action: utter_neutralresponse
+
+
+- story: about path
+  steps:
+  - intent: about
+  - action: utter_about
+
+- story: skill path
+  steps:
+  - intent: skill
+  - action: utter_skill
+
+- story: creation path
+  steps:
+  - intent: creation
+  - action: utter_creation
+
+- story: name path
+  steps:
+  - intent: name
+  - action: utter_name
+
+- story: help path
+  steps:
+  - intent: help
+  - action: utter_help
+
+- story: sad path
+  steps:
+  - intent: sad
+  - action: utter_sad
+
+- story: stressed path
+  steps:
+  - intent: stressed
+  - action: utter_stressed
+
+- story: worthless path
+  steps:
+  - intent: worthless
+  - action: utter_worthless        
+
+
+
+- story: depressed path
+  steps:
+  - intent: depressed
+  - action: utter_depressed
+
+- story: happy path
+  steps:
+  - intent: happytwo
+  - action: utter_happytwo
+
+   

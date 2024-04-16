@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News | Insurancy</title>
+	<meta name="description" content="Insurancy is sharp Insurance agency website template based on HTML CSS and JavaScript specially designed for insurance company, insurance agency and startup agency.">
+    <meta name="keywords" content="insurance broker website template, website template for insurance company, insurance website templates free download, insurance company website template, life insurance website template, insurance agency website template, auto insurance website template, insurance agency, html5 website template, insurance website examples, car insurance website template, insurance responsive website template free download">
+    <meta name="author" content="atulcodex - Atul Prajapati | Web Developer">
+	
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="atulcodex - Atul Prajapati | Freelance web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="../static/image/png" href="../static/img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/news-view.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="../static/img/insurancy logo.png" alt="insurancy-logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			
+			<ul class="nav-list">
+				<li class="active"><a href="/">HOME</a></li>
+				<li><a href="/about">ABOUT</a></li>
+				
+	
+				<li><a href="/contact">CHATBOT</a></li>
+				<li><a href="/Admin">ADMIN</a></li>
+				<li>
+					<a href="#" class="btn btn-blue">SIGN UP</a>
+					<ul class="dropdown-list">
+						<li><a href="/login">   LOGIN   </a></li>
+						<li><a href="/register"   >REGISTER  </a></li>
+						
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+	<section class="news-view">
+		<div class="container">
+			<h2 class="heading">ADMIN SIGN IN </h2>
+			<div class="lead-form">
+				<form id="loginForm" action="#" method="POST">
+					<div class="field-row">
+						<div class="input-field">
+							<label for="username">USERNAME</label>
+							<input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+						</div>
+				
+						<div class="input-field">
+							<label for="password">PASSWORD</label>
+							<input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+						</div>
+					</div>
+					<br>
+					<br>
+					<button class="btn btn-blue" type="submit">Login</button>
+				</form>
+				<script>
+					document.getElementById("loginForm").addEventListener("submit", function(event) {
+						event.preventDefault(); // Prevent default form submission
+						
+						// Get username and password input values
+						var username = document.getElementById("username").value;
+						var password = document.getElementById("password").value;
+						
+						// Check if username and password match admin credentials
+						if (username === "admin" && password === "admin") {
+							// Redirect to the next page
+							window.location.href = "/dashadmin";
+						} else {
+							// Display error message or handle invalid credentials
+							alert("Invalid username or password. Please try again.");
+						}
+					});
+				</script>				
+			</div>
+
+			
+
+
+			
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">© 2024 health insurance cost prediction. All rights reserved | Designed by Students</p>
+		</div>
+	</footer>
+	
+	<script src="../static/js/script.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>

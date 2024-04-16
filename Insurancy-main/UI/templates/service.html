@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insurancy | Be sucure for future!</title>
+	<meta name="description"
+		content="Insurancy is sharp Insurance agency website template based on HTML CSS and JavaScript specially designed for insurance company, insurance agency and startup agency.">
+	<meta name="keywords"
+		content="insurance broker website template, website template for insurance company, insurance website templates free download, insurance company website template, life insurance website template, insurance agency website template, auto insurance website template, insurance agency, html5 website template, insurance website examples, car insurance website template, insurance responsive website template free download">
+	<meta name="author" content="atulcodex - Atul Prajapati | Web Developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="../static/image/png" href="../static/img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="../static/css/style.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<style>
+		/* Style the dropdown */
+		.input-field select {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		/* Style the selected option */
+		.input-field select option:checked {
+			background-color: #f0f0f0;
+		}
+
+		/* Style the dropdown arrow */
+		.input-field select::after {
+			content: '\25BC';
+			/* Unicode character for down arrow */
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+		}
+	</style>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../static/js/jquery-3.3.1.js"></script>
+
+</head>
+
+<body class="">
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+		<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="/index">
+					<img src="../static/img/insurancy logo.png" alt="insurancy-logo" border="0">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li class="active"><a href="/index">Home</a></li>
+
+
+				<li><a href="/service">Service</a></li>
+				<li>
+					<button class="btn btn-blue">
+						<a href="/logout">logout</a>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Navigation ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Testimonial section ends -->
+
+
+	<section class="consultancy">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="lead-form">
+						<h2>health insurance prediction </h2>
+						<form id="fileUploadForm" method="POST">
+							<div class="input-field">
+								<label for="name">Enter Your Age</label>
+								<input type="number"name="age" id="age" placeholder="Enter Your Age">
+							</div>
+
+							<div class="input-field">
+								<label for="Gender">Select Gender</label>
+								<select id="Gender" name="Gender">
+									<option value="0">Male</option>
+									<option value="1">Female</option>
+								</select>
+							</div>
+
+							<div class="input-field">
+								<label for="name">Enter Your BMI</label>
+								<input type="number" name="BMI" id="BMI" placeholder="Enter Your BMI">
+							</div>
+
+							<div class="input-field">
+								<label for="name">No of Childrence</label>
+								<input type="number" name="Childrence" id="Childrence" placeholder="No of Childrence">
+							</div>
+
+							<div class="input-field">
+								<label for="Smoke">Do you Smoke?</label>
+								<select id="Smoke" name="Smoke">
+									<option value="1">Yes</option>
+									<option value="0">No</option>
+								</select>
+							</div>
+<!-- 
+							<div class="input-field">
+								<label for="Region">Which Region?</label>
+								<select id="Region" name="Region">
+									<option value="0">NORTH WEST</option>
+									<option value="1">NORTH EAST</option>
+									<option value="2">SOUTH EAST</option>
+									<option value="3">SOUTH WEST</option>
+								</select>
+							</div> -->
+
+
+							<button id="btnSubmit" class="btn btn-blue">Predict Probability</button>
+						</form>
+					</div>
+				</div>
+				<div class="col">
+					<div class="lead-form agent-card">
+						<img src="../{{data1[6]}}" alt="Agent" title="Agent" >
+						<h3 class="agent-name">{{data1[1]}}</h3>
+						<p class="para-line">{{data1[5]}}</p>
+						<h6 class="agent-number">
+							<ion-icon name="call-outline"></ion-icon> {{data1[3]}}
+						</h6>
+						<h6 class="agent-email">
+							<ion-icon name="mail-unread-outline"></ion-icon>{{data1[2]}}
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--------------- Footer ------------------>
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">© 2024 health insurance cost prediction. All rights reserved | Designed by Students</p>
+		</div>
+	</footer>
+	<!--------------- Footer ------------------>
+
+  <script>
+        $(document).ready(function () {
+    
+          $("#btnSubmit").click(function (event) {
+            event.preventDefault();
+    
+            var form = $('#fileUploadForm')[0];
+            var data = new FormData(form);
+            console.log(data)
+            $.ajax({
+              type: 'POST',
+              enctype: 'multipart/form-data',
+              url: "service",
+              data: data,
+              processData: false,
+              contentType: false,
+              cache: false,
+              timeout: 600000,
+              success: function (response) {
+              
+				console.log(response)
+                // Display the image and message in SweetAlert
+			
+		
+				// Show the Swal dialog with the received values
+				Swal.fire({
+					title: 'USER HEALTH INSURANCE COST AND PREDICTED SCORE',
+					html: `<div style="display: flex; align-items: center;">
+							  
+							  <div>
+								  <div style="font-size: 18px;">${response.massage}</div>
+								  <div style="font-size: 14px;">Expected amount: ${response.pred}</div>
+							  </div>
+							  <div>
+								<div style="font-size: 18px;">HEALTH INSURANCE SCORE</div>
+								<div style="font-size: 14px;">Expected score: ${response.insurance_score}</div>
+							</div>
+						  </div>`,
+					icon: 'info',
+					confirmButtonText: 'Okay'
+				}).then((result) => {
+					// Check if the "Okay" button was clicked
+					if (result.isConfirmed) {
+						// Redirect to a new URL with pred and score as query parameters
+						window.location.href = '/Recomdate?pred=' + encodeURIComponent(response.pred) + '&score=' + encodeURIComponent(response.insurance_score); // Include pred and score in the URL
+					}
+				});
+				
+                
+    
+              },
+              error: function (e) {
+                console.log("ERROR : ", e);
+                $("#btnSubmit").prop("disabled", false);
+              }
+            });
+    
+          });
+        });
+      </script>
+
+
+	<!-------------- Importing JS file -------------->
+	<script src="../static/js/script.js"></script>
+
+
+	<script>
+		// ------------------------ Scroll to top button --------------------
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 40) {
+					$('#topBtn').fadeIn();
+				}
+				else {
+					$('#topBtn').fadeOut();
+				}
+			});
+
+			$("#topBtn").click(function () {
+				$('html, body').animate({ scrollTop: 0 }, 800);
+			});
+		});
+		// ------------------------ Scroll to top button --------------------
+	</script>
+</body>
+
+</html>
